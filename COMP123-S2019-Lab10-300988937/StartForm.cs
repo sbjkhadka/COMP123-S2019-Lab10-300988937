@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Subarna Bijaya Khadka, Student#: 300988937, Summer 2019
 namespace COMP123_S2019_Lab10_300988937
 {
     public partial class StartForm : Form
@@ -30,15 +30,12 @@ namespace COMP123_S2019_Lab10_300988937
         /// <summary>
         /// Eventhandler for tick event
         /// On first tick, Splash screen (StartForm) disappears
-        /// Alternative (but not recommended) way is commented for my reference
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void SplashTimer_Tick(object sender, EventArgs e)
         {
             SplashTimer.Enabled = false;
-            //MainForm mainForm = new MainForm();
-            //mainForm.Show();
             Program.Forms[FormName.MAIN_FORM].Show();
             Hide();
         }

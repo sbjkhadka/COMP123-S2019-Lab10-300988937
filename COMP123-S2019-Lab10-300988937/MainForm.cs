@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Subarna Bijaya Khadka, Student#: 300988937, Summer 2019
 namespace COMP123_S2019_Lab10_300988937
 {
     public partial class MainForm : Form
@@ -18,15 +18,12 @@ namespace COMP123_S2019_Lab10_300988937
         }
         /// <summary>
         /// When next button is clicked, EndForms shows up and MainForm disppears
-        /// Alternative way commented for my reference
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            //EndForm endForm = new EndForm();
-            //endForm.Show();
             Program.Forms[FormName.END_FORM].Show();
             Hide();
         }
