@@ -54,7 +54,7 @@
             this.MaximizeBox = false;
             this.Name = "EndForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EndForm";
+            this.Text = "End Form";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseForm);
             this.ResumeLayout(false);
 

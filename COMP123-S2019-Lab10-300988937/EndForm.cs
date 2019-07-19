@@ -16,14 +16,24 @@ namespace COMP123_S2019_Lab10_300988937
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Event Handler for back button
+        /// Alternative way is commented for my reference
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+            //MainForm mainForm = new MainForm();
+            //mainForm.Show();
+            Program.Forms[FormName.MAIN_FORM].Show();
             Hide();
         }
-
+        /// <summary>
+        /// Event handler for close button in control box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CloseForm(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
